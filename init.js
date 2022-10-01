@@ -62,7 +62,7 @@ function showMoviesList(){
             <div onclick="${movie.id}" class="card" "${movie.title}">
             <div class="card-title">
             <h4  style="margin-left:20px; display:inline; float:left">${movie.title} `+  
-             ` <h4 style="margin-right:20px; margin-right:40px; display:inline; float:right">${movie.vote_average/2}</h5> 
+             ` <h4 style="margin-right:20px; margin-right:40px; display:inline; float:right">${stars(movie.vote_average/2)}${starsBlack(movie.vote_average/2)}</h5> 
              <br>
             <p class="card-body">${movie.overview} </div> </div> </div> `
            
@@ -77,3 +77,21 @@ function showMoviesList(){
         alert("No se registra la existencia de película");
     }
 }   
+
+function stars(score){
+    let puntos = Math.round(score)
+    let template = [];
+    for(e=0; e< puntos; e++){
+      
+      template +=`<span class="fa fa-star checked"></span>`;
+    }
+    return template;
+  };
+  function starsBlack(score){
+    let puntos = Math.round(score)
+    let templateBlack = [];
+    for(a=0; (puntos + a)< 5; a++){
+      
+      templateBlack +=`<span class="fa fa-star"></span>`;
+    }
+    return templateBlack;     }
