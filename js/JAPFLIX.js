@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
   //CLICK EN EL BOTÓN BUSCAR
   document.getElementById("btnBuscar").addEventListener("click", function () {
       buscar = document.getElementById("inputBuscar").value;
-      showMoviesList();
+      showMoviesList(currentMoviesArray);
   });
 
 });
