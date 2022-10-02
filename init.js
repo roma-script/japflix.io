@@ -55,7 +55,7 @@ function showMoviesList(){
         && (movie.title.toLowerCase().includes(buscar.toLowerCase())
         || movie.tagline.toLowerCase().includes(buscar.toLowerCase())
         || movie.overview.toLowerCase().includes(buscar.toLowerCase())
-        || movie.genres.some(e => e.toLowerCase().includes(buscar.toLowerCase()))) {
+        || movie.genres.some(e => e.toLowerCase().includes(buscar.toLowerCase())))) {
            
            
             htmlContentToAppend +=
