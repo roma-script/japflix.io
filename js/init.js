@@ -59,12 +59,12 @@ function showMoviesList(){
            
             htmlContentToAppend +=
             `<div class="album">
-            <div onclick="${movie.id}" class="card" "${movie.title}">
+            <div  class="card" onclick="${movie.id}" class="card" "${movie.title}">
             <div class="card-title">
             <h4  style="margin-left:20px; display:inline; float:left">${movie.title} `+  
              ` <h4 style="margin-right:20px; margin-right:40px; display:inline; float:right">${stars(movie.vote_average/2)}${starsBlack(movie.vote_average/2)}</h5> 
              <br>
-            <p class="card-body">${movie.overview} </div> </div> </div> `
+            <p class="card-body">${movie.tagline} </div> </div> </div> `
            
        
         }
