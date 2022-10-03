@@ -78,8 +78,15 @@ function showMoviesList() {
         <div class="offcanvas-body">
           <div>
             ${movie.overview}
-          </div><hr>
-          <p class="genres">${movie.genres[0].name}</p>
+          </div><hr>`
+
+      movie.genres.forEach(genre => {
+        htmlContentToAppend += `<p class="genres">${genre.name}</p>`;
+      });
+
+      htmlContentToAppend += 
+       `   
+          
           <button class="btn btn-secondary dropdown-toggle" type="button" style="align:left" id="dropdownMenuButton" data-bs-toggle="dropdown">
            Más Información
           </button>
