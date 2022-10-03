@@ -79,9 +79,9 @@ function showMoviesList() {
           <div>
             ${movie.overview}
           </div><hr>
-          <footer><div class="dropdown mt-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-            Numeros de la pelicula
+          <p class="genres">${movie.genres[0].name}</p>
+          <button class="btn btn-secondary dropdown-toggle" type="button" style="align:left" id="dropdownMenuButton" data-bs-toggle="dropdown">
+           Más Información
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li> Year :${movie.release_date}</li>
