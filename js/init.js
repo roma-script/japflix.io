@@ -81,7 +81,7 @@ function showMoviesList() {
           </div><hr>`
 
       movie.genres.forEach(genre => {
-        htmlContentToAppend += `<li class="genres">${genre.name} &nbsp </li>`;
+        htmlContentToAppend += `<p class="genres">${genre.name} &nbsp </p>`;
       });
 
       htmlContentToAppend += 
@@ -91,8 +91,8 @@ function showMoviesList() {
            Más Información
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li> Year :${movie.release_date}</li>
-            <li> Runtime :${movie.runtime} mins</li>
+            <li> Year: ${movie.release_date}</li>
+            <li> Runtime: ${movie.runtime} mins</li>
             <li> Revenue:  $ ${movie.release_date}</li>
             <li>Budget: $ ${movie.budget}</li>
       
