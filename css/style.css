@@ -114,6 +114,7 @@ hr {
     font-family: 'Raleway', serif !important;
     color:black;
     font-style: italic;
+    display: inline-block;
 }
 
 .offcanvas-body {
@@ -125,3 +126,4 @@ hr {
 .dropdown-menu {
     border: 2px solid red;
 }
+

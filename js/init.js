@@ -81,7 +81,7 @@ function showMoviesList() {
           </div><hr>`
 
       movie.genres.forEach(genre => {
-        htmlContentToAppend += `<p class="genres">${genre.name}</p>`;
+        htmlContentToAppend += `<li class="genres">${genre.name} &nbsp </li>`;
       });
 
       htmlContentToAppend += 
